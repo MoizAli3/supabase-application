@@ -8,8 +8,8 @@ const { createClient } = supabase
  
 let btn = document.getElementById("btn");
 btn.addEventListener("click", async () =>{
-  let email = document.getElementById("email");
-  let pass = document.getElementById("pass");
+let email = document.getElementById("email");
+let pass = document.getElementById("pass");
 
 try {
   const { data, error } = await supabaseconfig.auth.signUp({
